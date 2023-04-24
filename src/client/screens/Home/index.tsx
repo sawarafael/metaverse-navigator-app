@@ -1,15 +1,18 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Container, Title } from './styles'
+
+import { withExpoSnack } from 'nativewind'
 
 const Home = () => {
     return (
-        <View
+        <Container
+        className='flex-1 justify-center items-center background-black'
         >
-            <Text>
+            <Title className='text-slate-800'>
                 aaaaaaaaaaa
-            </Text>
-        </View>
+            </Title>
+        </Container>
     )
 }
 
-export default Home
+export default withExpoSnack(Home)
